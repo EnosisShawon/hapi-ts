@@ -1,0 +1,21 @@
+{
+  "name": "hapi-ts",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -w",
+    "start": "nodemon ./build/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shawon",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^16.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.3"
+  }
+}
