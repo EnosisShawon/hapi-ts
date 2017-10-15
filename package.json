@@ -5,13 +5,24 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc -w",
-    "start": "nodemon ./build/server",
+    "start": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Shawon",
   "license": "ISC",
   "dependencies": {
+    "@types/hapi": "^16.1.10",
     "hapi": "^16.6.2"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "build/*"
+    ],
+    "ext": "ts",
+    "exec": "tsc && node ./build/server",
+    "events": {
+      "error": ""
+    }
   },
   "devDependencies": {
     "nodemon": "^1.12.1",

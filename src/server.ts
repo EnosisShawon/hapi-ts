@@ -29,7 +29,7 @@ async function sendReply(reply: Function): Promise<any> {
 server.route({
     method: "GET",
     path: "/",
-    handler: (request: hapi.Request, reply: hapi.IReply) => {
+    handler: (request: hapi.Request, reply: hapi.Base_Reply) => {
         sendReply(reply);
     }
 
